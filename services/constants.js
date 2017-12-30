@@ -1,0 +1,19 @@
+const CONSTANTS = {
+    PRODUCT_ADVERTISING_BASE_URL : 'http://webservices.amazon.com',
+    PRODUCT_ADVERTISING_PATH: '/onca/xml',
+    PRODUCT_ADVERTISING_ENDOPOINT:this.PRODUCT_ADVERTISING_BASE_URL+this.PRODUCT_ADVERTISING_PATH,
+    CREDENTIALS : {
+        ACCESS_KEY: process.env.PRODUCT_ADVERSTISING_API_ACCESS_KEY,
+        SECRET_KEY: process.env.PRODUCT_ADVERSTISING_API_SECRET_KEY,
+    },
+    OPERATIONS:{
+        ITEM_SEARCH: 'ItemSearch'
+    },
+    ASSOCIATE_TAG: process.env.PRODUCT_ADVERSTISING_API_ASSOCIATE_ID,
+    SERVICE: {
+        ECOMMERCE:'AWSECommerceService',
+    },
+    SEARCH_INDEX:{
+        ALL:'All',
+    },
+},
